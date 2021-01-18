@@ -16,4 +16,11 @@ class FileController extends Controller
     {
         return FileResource::collection($request->user()->files);
     }
+
+    public function signed(Request $request)
+    {
+        $filename = $request->name;
+
+        
+    }
 }
